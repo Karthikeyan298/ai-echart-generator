@@ -33,9 +33,7 @@ This repo also contains echart-scrapper under util folder. Incase if you want to
 
 Sample Output:
 
-
-
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 
 This is just an initial model/phase1. Still needs to be improved.
