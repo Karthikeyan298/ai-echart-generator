@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic ECharts via SSE</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #main {
+      width: 100%;
+      height: 500px;
+      margin-top: 20px;
+    }
+
+    #status {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #eef;
+      border-left: 4px solid #36c;
+      font-family: monospace;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <h2>Generate EChart via SSE</h2>
+  <div style="max-width: 100%; display: flex; gap: 20px;">
+    <form id="queryForm">
+    <label for="queryInput">Enter your query:</label><br>
+    <textarea id="queryInput" name="queryInput" rows="4" cols="60" required></textarea><br><br>
+    <button type="submit">Generate Chart</button>
+  </form>
+
+  <div id="status">Status: Waiting for query...</div>
+  </div>
+  <div id="main"></div>
+
+  <script>
+  const form = document.getElementById('queryForm');
+  const queryInput = document.getElementById('queryInput');
+  const statusDiv = document.getElementById('status');
+  const chartDom = document.getElementById('main');
+  const myChart = echarts.init(chartDom);
+  let evtSource;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const query = encodeURIComponent(queryInput.value.trim());
+
+    if (!query) {
+      alert("Please enter a query.");
+      return;
+    }
+
+    // Reset chart and status
+    myChart.clear();
+    statusDiv.innerHTML = ''; // clear previous status messages
+    const connectingMsg = document.createElement("div");
+    connectingMsg.textContent = "Connecting to SSE...";
+    statusDiv.appendChild(connectingMsg);
+
+    if (evtSource) evtSource.close();
+
+    evtSource = new EventSource(`http://localhost:5000/sse?query=${query}`);
+
+    evtSource.addEventListener('status', (event) => {
+      console.log('Status event:', event.data);
+      const p = document.createElement("div");
+      p.textContent = `Status: ${event.data}`;
+      statusDiv.appendChild(p);
+    });
+
+    evtSource.addEventListener('echart', (event) => {
+      try {
+        console.log('Received EChart event:', event.data);
+        const options = JSON.parse(event.data);
+        console.log('Received EChart options:', options);
+        myChart.setOption(options);
+
+        const done = document.createElement("div");
+        done.textContent = "Chart loaded successfully!";
+        statusDiv.appendChild(done);
+      } catch (err) {
+        console.error('Failed to parse EChart options:', err);
+        const errorMsg = document.createElement("div");
+        errorMsg.textContent = "Error: Failed to load chart";
+        statusDiv.appendChild(errorMsg);
+      }
+    });
+
+    evtSource.onerror = (err) => {
+      console.error('SSE error:', err);
+      const errorMsg = document.createElement("div");
+      errorMsg.textContent = "SSE connection closed";
+      statusDiv.appendChild(errorMsg);
+      evtSource.close();
+    };
+  });
+</script>
+
+</body>
+</html>

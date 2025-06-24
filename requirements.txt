@@ -1,0 +1,12 @@
+langchain-openai==0.3.19
+langchain-community==0.3.24
+SQLAlchemy==2.0.41
+psycopg2==2.9.10
+Flask==3.1.1
+flask-cors==6.0.1
+beautifulsoup4==4.13.4
+Markdown~=3.8
+requests~=2.32.3
+selenium~=4.33.0
+webdriver-manager~=4.0.2
+echarts-python==0.1.3

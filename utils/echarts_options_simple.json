@@ -1,0 +1,5791 @@
+{
+  "Line": [
+    {
+      "name": "line-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/line-simple.js",
+      "option": {
+        "xAxis": {
+          "type": "category",
+          "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        },
+        "yAxis": {
+          "type": "value"
+        },
+        "series": [
+          {
+            "data": [
+              150,
+              230,
+              224,
+              218,
+              135,
+              147,
+              260
+            ],
+            "type": "line"
+          }
+        ]
+      }
+    }
+  ],
+  "Bar": [
+    {
+      "name": "bar-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-simple.js",
+      "option": {
+        "xAxis": {
+          "type": "category",
+          "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        },
+        "yAxis": {
+          "type": "value"
+        },
+        "series": [
+          {
+            "data": [
+              120,
+              200,
+              150,
+              80,
+              70,
+              110,
+              130
+            ],
+            "type": "bar"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar-tick-align",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-tick-align.js",
+      "option": {
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "shadow"
+          }
+        },
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "type": "category",
+            "data": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
+            ],
+            "axisTick": {
+              "alignWithLabel": true
+            }
+          }
+        ],
+        "yAxis": [
+          {
+            "type": "value"
+          }
+        ],
+        "series": [
+          {
+            "name": "Direct",
+            "type": "bar",
+            "barWidth": "60%",
+            "data": [
+              10,
+              52,
+              200,
+              334,
+              390,
+              330,
+              220
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar-background",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-background.js",
+      "option": {
+        "xAxis": {
+          "type": "category",
+          "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        },
+        "yAxis": {
+          "type": "value"
+        },
+        "series": [
+          {
+            "data": [
+              120,
+              200,
+              150,
+              80,
+              70,
+              110,
+              130
+            ],
+            "type": "bar",
+            "showBackground": true,
+            "backgroundStyle": {
+              "color": "rgba(180, 180, 180, 0.2)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar-data-color",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-data-color.js",
+      "option": {
+        "xAxis": {
+          "type": "category",
+          "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        },
+        "yAxis": {
+          "type": "value"
+        },
+        "series": [
+          {
+            "data": [
+              120,
+              {
+                "value": 200,
+                "itemStyle": {
+                  "color": "#a90000"
+                }
+              },
+              150,
+              80,
+              70,
+              110,
+              130
+            ],
+            "type": "bar"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar-waterfall",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-waterfall.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 18 (char 202)"
+      }
+    },
+    {
+      "name": "bar-negative2",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-negative2.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 53 column 36 (char 902)"
+      }
+    },
+    {
+      "name": "bar-polar-label-radial",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-polar-label-radial.js",
+      "option": {
+        "title": [
+          {
+            "text": "Radial Polar Bar Label Position (middle)"
+          }
+        ],
+        "polar": {
+          "radius": [
+            30,
+            "80%"
+          ]
+        },
+        "radiusAxis": {
+          "max": 4
+        },
+        "angleAxis": {
+          "type": "category",
+          "data": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "startAngle": 75
+        },
+        "tooltip": {},
+        "series": {
+          "type": "bar",
+          "data": [
+            2,
+            1.2,
+            2.4,
+            3.6
+          ],
+          "coordinateSystem": "polar",
+          "label": {
+            "show": true,
+            "position": "middle",
+            "formatter": "{b}: {c}"
+          }
+        },
+        "animation": false
+      }
+    },
+    {
+      "name": "bar-polar-label-tangential",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-polar-label-tangential.js",
+      "option": {
+        "title": [
+          {
+            "text": "Tangential Polar Bar Label Position (middle)"
+          }
+        ],
+        "polar": {
+          "radius": [
+            30,
+            "80%"
+          ]
+        },
+        "angleAxis": {
+          "max": 4,
+          "startAngle": 75
+        },
+        "radiusAxis": {
+          "type": "category",
+          "data": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        "tooltip": {},
+        "series": {
+          "type": "bar",
+          "data": [
+            2,
+            1.2,
+            2.4,
+            3.6
+          ],
+          "coordinateSystem": "polar",
+          "label": {
+            "show": true,
+            "position": "middle",
+            "formatter": "{b}: {c}"
+          }
+        }
+      }
+    },
+    {
+      "name": "bar-y-category",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-y-category.js",
+      "option": {
+        "title": {
+          "text": "World Population"
+        },
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "shadow"
+          }
+        },
+        "legend": {},
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": {
+          "type": "value",
+          "boundaryGap": [
+            0,
+            0.01
+          ]
+        },
+        "yAxis": {
+          "type": "category",
+          "data": [
+            "Brazil",
+            "Indonesia",
+            "USA",
+            "India",
+            "China",
+            "World"
+          ]
+        },
+        "series": [
+          {
+            "name": "2011",
+            "type": "bar",
+            "data": [
+              18203,
+              23489,
+              29034,
+              104970,
+              131744,
+              630230
+            ]
+          },
+          {
+            "name": "2012",
+            "type": "bar",
+            "data": [
+              19325,
+              23438,
+              31000,
+              121594,
+              134141,
+              681807
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "polar-endAngle",
+      "link": "https://echarts.apache.org/examples/examples/js/polar-endAngle.js",
+      "option": {
+        "tooltip": {},
+        "angleAxis": [
+          {
+            "type": "category",
+            "polarIndex": 0,
+            "startAngle": 90,
+            "endAngle": 0,
+            "data": [
+              "S1",
+              "S2",
+              "S3"
+            ]
+          },
+          {
+            "type": "category",
+            "polarIndex": 1,
+            "startAngle": -90,
+            "endAngle": -180,
+            "data": [
+              "T1",
+              "T2",
+              "T3"
+            ]
+          }
+        ],
+        "radiusAxis": [
+          {
+            "polarIndex": 0
+          },
+          {
+            "polarIndex": 1
+          }
+        ],
+        "polar": [
+          {},
+          {}
+        ],
+        "series": [
+          {
+            "type": "bar",
+            "polarIndex": 0,
+            "data": [
+              1,
+              2,
+              3
+            ],
+            "coordinateSystem": "polar"
+          },
+          {
+            "type": "bar",
+            "polarIndex": 1,
+            "data": [
+              1,
+              2,
+              3
+            ],
+            "coordinateSystem": "polar"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar-gradient",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-gradient.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 4 column 26 (char 72)"
+      }
+    },
+    {
+      "name": "bar-label-rotation",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-label-rotation.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 41 column 16 (char 827)"
+      }
+    },
+    {
+      "name": "bar-stack",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-stack.js",
+      "option": {
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "shadow"
+          }
+        },
+        "legend": {},
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "type": "category",
+            "data": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
+            ]
+          }
+        ],
+        "yAxis": [
+          {
+            "type": "value"
+          }
+        ],
+        "series": [
+          {
+            "name": "Direct",
+            "type": "bar",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              320,
+              332,
+              301,
+              334,
+              390,
+              330,
+              320
+            ]
+          },
+          {
+            "name": "Email",
+            "type": "bar",
+            "stack": "Ad",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              120,
+              132,
+              101,
+              134,
+              90,
+              230,
+              210
+            ]
+          },
+          {
+            "name": "Union Ads",
+            "type": "bar",
+            "stack": "Ad",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              220,
+              182,
+              191,
+              234,
+              290,
+              330,
+              310
+            ]
+          },
+          {
+            "name": "Video Ads",
+            "type": "bar",
+            "stack": "Ad",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              150,
+              232,
+              201,
+              154,
+              190,
+              330,
+              410
+            ]
+          },
+          {
+            "name": "Search Engine",
+            "type": "bar",
+            "data": [
+              862,
+              1018,
+              964,
+              1026,
+              1679,
+              1600,
+              1570
+            ],
+            "emphasis": {
+              "focus": "series"
+            },
+            "markLine": {
+              "lineStyle": {
+                "type": "dashed"
+              },
+              "data": [
+                [
+                  {
+                    "type": "min"
+                  },
+                  {
+                    "type": "max"
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Baidu",
+            "type": "bar",
+            "barWidth": 5,
+            "stack": "Search Engine",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              620,
+              732,
+              701,
+              734,
+              1090,
+              1130,
+              1120
+            ]
+          },
+          {
+            "name": "Google",
+            "type": "bar",
+            "stack": "Search Engine",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              120,
+              132,
+              101,
+              134,
+              290,
+              230,
+              220
+            ]
+          },
+          {
+            "name": "Bing",
+            "type": "bar",
+            "stack": "Search Engine",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              60,
+              72,
+              71,
+              74,
+              190,
+              130,
+              110
+            ]
+          },
+          {
+            "name": "Others",
+            "type": "bar",
+            "stack": "Search Engine",
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              62,
+              82,
+              91,
+              84,
+              109,
+              110,
+              120
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar-stack-borderRadius",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-stack-borderRadius.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 9 column 13 (char 156)"
+      }
+    },
+    {
+      "name": "bar-stack-normalization",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-stack-normalization.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 5 column 3 (char 49)"
+      }
+    },
+    {
+      "name": "bar-stack-normalization-and-variation",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-stack-normalization-and-variation.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 5 column 3 (char 49)"
+      }
+    },
+    {
+      "name": "bar-waterfall2",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-waterfall2.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 10 column 18 (char 168)"
+      }
+    },
+    {
+      "name": "bar-y-category-stack",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-y-category-stack.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 5 column 7 (char 67)"
+      }
+    },
+    {
+      "name": "bar-brush",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-brush.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 20 column 13 (char 355)"
+      }
+    },
+    {
+      "name": "bar-negative",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-negative.js",
+      "option": {
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "shadow"
+          }
+        },
+        "legend": {
+          "data": [
+            "Profit",
+            "Expenses",
+            "Income"
+          ]
+        },
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "type": "value"
+          }
+        ],
+        "yAxis": [
+          {
+            "type": "category",
+            "axisTick": {
+              "show": false
+            },
+            "data": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
+            ]
+          }
+        ],
+        "series": [
+          {
+            "name": "Profit",
+            "type": "bar",
+            "label": {
+              "show": true,
+              "position": "inside"
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              200,
+              170,
+              240,
+              244,
+              200,
+              220,
+              210
+            ]
+          },
+          {
+            "name": "Income",
+            "type": "bar",
+            "stack": "Total",
+            "label": {
+              "show": true
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              320,
+              302,
+              341,
+              374,
+              390,
+              450,
+              420
+            ]
+          },
+          {
+            "name": "Expenses",
+            "type": "bar",
+            "stack": "Total",
+            "label": {
+              "show": true,
+              "position": "left"
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [
+              -120,
+              -132,
+              -101,
+              -134,
+              -190,
+              -230,
+              -210
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar1",
+      "link": "https://echarts.apache.org/examples/examples/js/bar1.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 25 column 7 (char 511)"
+      }
+    },
+    {
+      "name": "mix-line-bar",
+      "link": "https://echarts.apache.org/examples/examples/js/mix-line-bar.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 58 column 27 (char 1138)"
+      }
+    },
+    {
+      "name": "mix-zoom-on-value",
+      "link": "https://echarts.apache.org/examples/examples/js/mix-zoom-on-value.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 35 column 19 (char 830)"
+      }
+    },
+    {
+      "name": "multiple-y-axis",
+      "link": "https://echarts.apache.org/examples/examples/js/multiple-y-axis.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 12 (char 13)"
+      }
+    },
+    {
+      "name": "bar-animation-delay",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-animation-delay.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 9 column 5 (char 120)"
+      }
+    },
+    {
+      "name": "bar-drilldown",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-drilldown.js",
+      "option": {
+        "xAxis": {
+          "data": [
+            "Animals",
+            "Fruits",
+            "Cars"
+          ]
+        },
+        "yAxis": {},
+        "dataGroupId": "",
+        "animationDurationUpdate": 500,
+        "series": {
+          "type": "bar",
+          "id": "sales",
+          "data": [
+            {
+              "value": 5,
+              "groupId": "animals"
+            },
+            {
+              "value": 2,
+              "groupId": "fruits"
+            },
+            {
+              "value": 4,
+              "groupId": "cars"
+            }
+          ],
+          "universalTransition": {
+            "enabled": true,
+            "divideShape": "clone"
+          }
+        }
+      }
+    },
+    {
+      "name": "bar-large",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-large.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 13 (char 27)"
+      }
+    },
+    {
+      "name": "bar-race",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-race.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 11 column 14 (char 217)"
+      }
+    },
+    {
+      "name": "bar-multi-drilldown",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-multi-drilldown.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 11 (char 12)"
+      }
+    },
+    {
+      "name": "bar-race-country",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-race-country.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 22 (char 178)"
+      }
+    },
+    {
+      "name": "bar-rich-text",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-rich-text.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 35 column 20 (char 590)"
+      }
+    },
+    {
+      "name": "dynamic-data",
+      "link": "https://echarts.apache.org/examples/examples/js/dynamic-data.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 32 column 15 (char 522)"
+      }
+    },
+    {
+      "name": "mix-timeline-finance",
+      "link": "https://echarts.apache.org/examples/examples/js/mix-timeline-finance.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 5 column 7 (char 74)"
+      }
+    },
+    {
+      "name": "watermark",
+      "link": "https://echarts.apache.org/examples/examples/js/watermark.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 14 (char 61)"
+      }
+    },
+    {
+      "name": "bar-polar-real-estate",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-polar-real-estate.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 4 column 28 (char 108)"
+      }
+    },
+    {
+      "name": "bar-polar-stack",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-polar-stack.js",
+      "option": {
+        "angleAxis": {},
+        "radiusAxis": {
+          "type": "category",
+          "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu"
+          ],
+          "z": 10
+        },
+        "polar": {},
+        "series": [
+          {
+            "type": "bar",
+            "data": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "coordinateSystem": "polar",
+            "name": "A",
+            "stack": "a",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "bar",
+            "data": [
+              2,
+              4,
+              6,
+              8
+            ],
+            "coordinateSystem": "polar",
+            "name": "B",
+            "stack": "a",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "bar",
+            "data": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "coordinateSystem": "polar",
+            "name": "C",
+            "stack": "a",
+            "emphasis": {
+              "focus": "series"
+            }
+          }
+        ],
+        "legend": {
+          "show": true,
+          "data": [
+            "A",
+            "B",
+            "C"
+          ]
+        }
+      }
+    },
+    {
+      "name": "bar-polar-stack-radial",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-polar-stack-radial.js",
+      "option": {
+        "angleAxis": {
+          "type": "category",
+          "data": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ]
+        },
+        "radiusAxis": {},
+        "polar": {},
+        "series": [
+          {
+            "type": "bar",
+            "data": [
+              1,
+              2,
+              3,
+              4,
+              3,
+              5,
+              1
+            ],
+            "coordinateSystem": "polar",
+            "name": "A",
+            "stack": "a",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "bar",
+            "data": [
+              2,
+              4,
+              6,
+              1,
+              3,
+              2,
+              1
+            ],
+            "coordinateSystem": "polar",
+            "name": "B",
+            "stack": "a",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "bar",
+            "data": [
+              1,
+              2,
+              3,
+              4,
+              1,
+              2,
+              5
+            ],
+            "coordinateSystem": "polar",
+            "name": "C",
+            "stack": "a",
+            "emphasis": {
+              "focus": "series"
+            }
+          }
+        ],
+        "legend": {
+          "show": true,
+          "data": [
+            "A",
+            "B",
+            "C"
+          ]
+        }
+      }
+    },
+    {
+      "name": "polar-roundCap",
+      "link": "https://echarts.apache.org/examples/examples/js/polar-roundCap.js",
+      "option": {
+        "angleAxis": {
+          "max": 2,
+          "startAngle": 30,
+          "splitLine": {
+            "show": false
+          }
+        },
+        "radiusAxis": {
+          "type": "category",
+          "data": [
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+          ],
+          "z": 10
+        },
+        "polar": {},
+        "series": [
+          {
+            "type": "bar",
+            "data": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "coordinateSystem": "polar",
+            "name": "Without Round Cap",
+            "itemStyle": {
+              "borderColor": "red",
+              "opacity": 0.8,
+              "borderWidth": 1
+            }
+          },
+          {
+            "type": "bar",
+            "data": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "coordinateSystem": "polar",
+            "name": "With Round Cap",
+            "roundCap": true,
+            "itemStyle": {
+              "borderColor": "green",
+              "opacity": 0.8,
+              "borderWidth": 1
+            }
+          }
+        ],
+        "legend": {
+          "show": true,
+          "data": [
+            "Without Round Cap",
+            "With Round Cap"
+          ]
+        }
+      }
+    },
+    {
+      "name": "data-transform-sort-bar",
+      "link": "https://echarts.apache.org/examples/examples/js/data-transform-sort-bar.js",
+      "option": {
+        "dataset": [
+          {
+            "dimensions": [
+              "name",
+              "age",
+              "profession",
+              "score",
+              "date"
+            ],
+            "source": [
+              [
+                "Hannah Krause",
+                41,
+                "Engineer",
+                314,
+                "2011-02-12"
+              ],
+              [
+                "Zhao Qian",
+                20,
+                "Teacher",
+                351,
+                "2011-03-01"
+              ],
+              [
+                "Jasmin Krause ",
+                52,
+                "Musician",
+                287,
+                "2011-02-14"
+              ],
+              [
+                "Li Lei",
+                37,
+                "Teacher",
+                219,
+                "2011-02-18"
+              ],
+              [
+                "Karle Neumann",
+                25,
+                "Engineer",
+                253,
+                "2011-04-02"
+              ],
+              [
+                "Adrian Gro\u00df",
+                19,
+                "Teacher",
+                "-",
+                "2011-01-16"
+              ],
+              [
+                "Mia Neumann",
+                71,
+                "Engineer",
+                165,
+                "2011-03-19"
+              ],
+              [
+                "B\u00f6hm Fuchs",
+                36,
+                "Musician",
+                318,
+                "2011-02-24"
+              ],
+              [
+                "Han Meimei",
+                67,
+                "Engineer",
+                366,
+                "2011-03-12"
+              ]
+            ]
+          },
+          {
+            "transform": {
+              "type": "sort",
+              "config": {
+                "dimension": "score",
+                "order": "desc"
+              }
+            }
+          }
+        ],
+        "xAxis": {
+          "type": "category",
+          "axisLabel": {
+            "interval": 0,
+            "rotate": 30
+          }
+        },
+        "yAxis": {},
+        "series": {
+          "type": "bar",
+          "encode": {
+            "x": "name",
+            "y": "score"
+          },
+          "datasetIndex": 1
+        }
+      }
+    },
+    {
+      "name": "dataset-encode0",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-encode0.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 25 column 5 (char 652)"
+      }
+    },
+    {
+      "name": "dataset-series-layout-by",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-series-layout-by.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 19 column 5 (char 494)"
+      }
+    },
+    {
+      "name": "dataset-simple0",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-simple0.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 15 column 3 (char 337)"
+      }
+    },
+    {
+      "name": "dataset-simple1",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-simple1.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 15 column 3 (char 497)"
+      }
+    }
+  ],
+  "Pie": [
+    {
+      "name": "pie-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-simple.js",
+      "option": {
+        "title": {
+          "text": "Referer of a Website",
+          "subtext": "Fake Data",
+          "left": "center"
+        },
+        "tooltip": {
+          "trigger": "item"
+        },
+        "legend": {
+          "orient": "vertical",
+          "left": "left"
+        },
+        "series": [
+          {
+            "name": "Access From",
+            "type": "pie",
+            "radius": "50%",
+            "data": [
+              {
+                "value": 1048,
+                "name": "Search Engine"
+              },
+              {
+                "value": 735,
+                "name": "Direct"
+              },
+              {
+                "value": 580,
+                "name": "Email"
+              },
+              {
+                "value": 484,
+                "name": "Union Ads"
+              },
+              {
+                "value": 300,
+                "name": "Video Ads"
+              }
+            ],
+            "emphasis": {
+              "itemStyle": {
+                "shadowBlur": 10,
+                "shadowOffsetX": 0,
+                "shadowColor": "rgba(0, 0, 0, 0.5)"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "pie-borderRadius",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-borderRadius.js",
+      "option": {
+        "tooltip": {
+          "trigger": "item"
+        },
+        "legend": {
+          "top": "5%",
+          "left": "center"
+        },
+        "series": [
+          {
+            "name": "Access From",
+            "type": "pie",
+            "radius": [
+              "40%",
+              "70%"
+            ],
+            "avoidLabelOverlap": false,
+            "itemStyle": {
+              "borderRadius": 10,
+              "borderColor": "#fff",
+              "borderWidth": 2
+            },
+            "label": {
+              "show": false,
+              "position": "center"
+            },
+            "emphasis": {
+              "label": {
+                "show": true,
+                "fontSize": 40,
+                "fontWeight": "bold"
+              }
+            },
+            "labelLine": {
+              "show": false
+            },
+            "data": [
+              {
+                "value": 1048,
+                "name": "Search Engine"
+              },
+              {
+                "value": 735,
+                "name": "Direct"
+              },
+              {
+                "value": 580,
+                "name": "Email"
+              },
+              {
+                "value": 484,
+                "name": "Union Ads"
+              },
+              {
+                "value": 300,
+                "name": "Video Ads"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "pie-doughnut",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-doughnut.js",
+      "option": {
+        "tooltip": {
+          "trigger": "item"
+        },
+        "legend": {
+          "top": "5%",
+          "left": "center"
+        },
+        "series": [
+          {
+            "name": "Access From",
+            "type": "pie",
+            "radius": [
+              "40%",
+              "70%"
+            ],
+            "avoidLabelOverlap": false,
+            "label": {
+              "show": false,
+              "position": "center"
+            },
+            "emphasis": {
+              "label": {
+                "show": true,
+                "fontSize": 40,
+                "fontWeight": "bold"
+              }
+            },
+            "labelLine": {
+              "show": false
+            },
+            "data": [
+              {
+                "value": 1048,
+                "name": "Search Engine"
+              },
+              {
+                "value": 735,
+                "name": "Direct"
+              },
+              {
+                "value": 580,
+                "name": "Email"
+              },
+              {
+                "value": 484,
+                "name": "Union Ads"
+              },
+              {
+                "value": 300,
+                "name": "Video Ads"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "pie-half-donut",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-half-donut.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 15 column 7 (char 241)"
+      }
+    },
+    {
+      "name": "pie-padAngle",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-padAngle.js",
+      "option": {
+        "tooltip": {
+          "trigger": "item"
+        },
+        "legend": {
+          "top": "5%",
+          "left": "center"
+        },
+        "series": [
+          {
+            "name": "Access From",
+            "type": "pie",
+            "radius": [
+              "40%",
+              "70%"
+            ],
+            "avoidLabelOverlap": false,
+            "padAngle": 5,
+            "itemStyle": {
+              "borderRadius": 10
+            },
+            "label": {
+              "show": false,
+              "position": "center"
+            },
+            "emphasis": {
+              "label": {
+                "show": true,
+                "fontSize": 40,
+                "fontWeight": "bold"
+              }
+            },
+            "labelLine": {
+              "show": false
+            },
+            "data": [
+              {
+                "value": 1048,
+                "name": "Search Engine"
+              },
+              {
+                "value": 735,
+                "name": "Direct"
+              },
+              {
+                "value": 580,
+                "name": "Email"
+              },
+              {
+                "value": 484,
+                "name": "Union Ads"
+              },
+              {
+                "value": 300,
+                "name": "Video Ads"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "pie-custom",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-custom.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 34 column 8 (char 713)"
+      }
+    },
+    {
+      "name": "pie-pattern",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-pattern.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 14 (char 38)"
+      }
+    },
+    {
+      "name": "pie-roseType",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-roseType.js",
+      "option": {
+        "title": {
+          "text": "Nightingale Chart",
+          "subtext": "Fake Data",
+          "left": "center"
+        },
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b} : {c} ({d}%)"
+        },
+        "legend": {
+          "left": "center",
+          "top": "bottom",
+          "data": [
+            "rose1",
+            "rose2",
+            "rose3",
+            "rose4",
+            "rose5",
+            "rose6",
+            "rose7",
+            "rose8"
+          ]
+        },
+        "toolbox": {
+          "show": true,
+          "feature": {
+            "mark": {
+              "show": true
+            },
+            "dataView": {
+              "show": true,
+              "readOnly": false
+            },
+            "restore": {
+              "show": true
+            },
+            "saveAsImage": {
+              "show": true
+            }
+          }
+        },
+        "series": [
+          {
+            "name": "Radius Mode",
+            "type": "pie",
+            "radius": [
+              20,
+              140
+            ],
+            "center": [
+              "25%",
+              "50%"
+            ],
+            "roseType": "radius",
+            "itemStyle": {
+              "borderRadius": 5
+            },
+            "label": {
+              "show": false
+            },
+            "emphasis": {
+              "label": {
+                "show": true
+              }
+            },
+            "data": [
+              {
+                "value": 40,
+                "name": "rose 1"
+              },
+              {
+                "value": 33,
+                "name": "rose 2"
+              },
+              {
+                "value": 28,
+                "name": "rose 3"
+              },
+              {
+                "value": 22,
+                "name": "rose 4"
+              },
+              {
+                "value": 20,
+                "name": "rose 5"
+              },
+              {
+                "value": 15,
+                "name": "rose 6"
+              },
+              {
+                "value": 12,
+                "name": "rose 7"
+              },
+              {
+                "value": 10,
+                "name": "rose 8"
+              }
+            ]
+          },
+          {
+            "name": "Area Mode",
+            "type": "pie",
+            "radius": [
+              20,
+              140
+            ],
+            "center": [
+              "75%",
+              "50%"
+            ],
+            "roseType": "area",
+            "itemStyle": {
+              "borderRadius": 5
+            },
+            "data": [
+              {
+                "value": 30,
+                "name": "rose 1"
+              },
+              {
+                "value": 28,
+                "name": "rose 2"
+              },
+              {
+                "value": 26,
+                "name": "rose 3"
+              },
+              {
+                "value": 24,
+                "name": "rose 4"
+              },
+              {
+                "value": 22,
+                "name": "rose 5"
+              },
+              {
+                "value": 20,
+                "name": "rose 6"
+              },
+              {
+                "value": 18,
+                "name": "rose 7"
+              },
+              {
+                "value": 16,
+                "name": "rose 8"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "pie-roseType-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-roseType-simple.js",
+      "option": {
+        "legend": {
+          "top": "bottom"
+        },
+        "toolbox": {
+          "show": true,
+          "feature": {
+            "mark": {
+              "show": true
+            },
+            "dataView": {
+              "show": true,
+              "readOnly": false
+            },
+            "restore": {
+              "show": true
+            },
+            "saveAsImage": {
+              "show": true
+            }
+          }
+        },
+        "series": [
+          {
+            "name": "Nightingale Chart",
+            "type": "pie",
+            "radius": [
+              50,
+              250
+            ],
+            "center": [
+              "50%",
+              "50%"
+            ],
+            "roseType": "area",
+            "itemStyle": {
+              "borderRadius": 8
+            },
+            "data": [
+              {
+                "value": 40,
+                "name": "rose 1"
+              },
+              {
+                "value": 38,
+                "name": "rose 2"
+              },
+              {
+                "value": 32,
+                "name": "rose 3"
+              },
+              {
+                "value": 30,
+                "name": "rose 4"
+              },
+              {
+                "value": 28,
+                "name": "rose 5"
+              },
+              {
+                "value": 26,
+                "name": "rose 6"
+              },
+              {
+                "value": 22,
+                "name": "rose 7"
+              },
+              {
+                "value": 18,
+                "name": "rose 8"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "pie-alignTo",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-alignTo.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 8 column 20 (char 111)"
+      }
+    },
+    {
+      "name": "pie-labelLine-adjust",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-labelLine-adjust.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 13 (char 175)"
+      }
+    },
+    {
+      "name": "pie-legend",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-legend.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 17 column 13 (char 298)"
+      }
+    },
+    {
+      "name": "pie-rich-text",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-rich-text.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 34 column 14 (char 861)"
+      }
+    },
+    {
+      "name": "pie-nest",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-nest.js",
+      "option": {
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend": {
+          "data": [
+            "Direct",
+            "Marketing",
+            "Search Engine",
+            "Email",
+            "Union Ads",
+            "Video Ads",
+            "Baidu",
+            "Google",
+            "Bing",
+            "Others"
+          ]
+        },
+        "series": [
+          {
+            "name": "Access From",
+            "type": "pie",
+            "selectedMode": "single",
+            "radius": [
+              0,
+              "30%"
+            ],
+            "label": {
+              "position": "inner",
+              "fontSize": 14
+            },
+            "labelLine": {
+              "show": false
+            },
+            "data": [
+              {
+                "value": 1548,
+                "name": "Search Engine"
+              },
+              {
+                "value": 775,
+                "name": "Direct"
+              },
+              {
+                "value": 679,
+                "name": "Marketing",
+                "selected": true
+              }
+            ]
+          },
+          {
+            "name": "Access From",
+            "type": "pie",
+            "radius": [
+              "45%",
+              "60%"
+            ],
+            "labelLine": {
+              "length": 30
+            },
+            "label": {
+              "formatter": "{a|{a}}{abg|}\n{hr|}\n  {b|{b}\uff1a}{c}  {per|{d}%}  ",
+              "backgroundColor": "#F6F8FC",
+              "borderColor": "#8C8D8E",
+              "borderWidth": 1,
+              "borderRadius": 4,
+              "rich": {
+                "a": {
+                  "color": "#6E7079",
+                  "lineHeight": 22,
+                  "align": "center"
+                },
+                "hr": {
+                  "borderColor": "#8C8D8E",
+                  "width": "100%",
+                  "borderWidth": 1,
+                  "height": 0
+                },
+                "b": {
+                  "color": "#4C5058",
+                  "fontSize": 14,
+                  "fontWeight": "bold",
+                  "lineHeight": 33
+                },
+                "per": {
+                  "color": "#fff",
+                  "backgroundColor": "#4C5058",
+                  "padding": [
+                    3,
+                    4
+                  ],
+                  "borderRadius": 4
+                }
+              }
+            },
+            "data": [
+              {
+                "value": 1048,
+                "name": "Baidu"
+              },
+              {
+                "value": 335,
+                "name": "Direct"
+              },
+              {
+                "value": 310,
+                "name": "Email"
+              },
+              {
+                "value": 251,
+                "name": "Google"
+              },
+              {
+                "value": 234,
+                "name": "Union Ads"
+              },
+              {
+                "value": 147,
+                "name": "Bing"
+              },
+              {
+                "value": 135,
+                "name": "Video Ads"
+              },
+              {
+                "value": 102,
+                "name": "Others"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "data-transform-multiple-pie",
+      "link": "https://echarts.apache.org/examples/examples/js/data-transform-multiple-pie.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 67 column 3 (char 1521)"
+      }
+    },
+    {
+      "name": "dataset-default",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-default.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 18 column 7 (char 482)"
+      }
+    },
+    {
+      "name": "calendar-pie",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-pie.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 17 (char 204)"
+      }
+    },
+    {
+      "name": "map-usa-pie",
+      "link": "https://echarts.apache.org/examples/examples/js/map-usa-pie.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 12 column 7 (char 181)"
+      }
+    },
+    {
+      "name": "dataset-link",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-link.js",
+      "option": {
+        "legend": {},
+        "tooltip": {
+          "trigger": "axis",
+          "showContent": false
+        },
+        "dataset": {
+          "source": [
+            [
+              "product",
+              "2012",
+              "2013",
+              "2014",
+              "2015",
+              "2016",
+              "2017"
+            ],
+            [
+              "Milk Tea",
+              56.5,
+              82.1,
+              88.7,
+              70.1,
+              53.4,
+              85.1
+            ],
+            [
+              "Matcha Latte",
+              51.1,
+              51.4,
+              55.1,
+              53.3,
+              73.8,
+              68.7
+            ],
+            [
+              "Cheese Cocoa",
+              40.1,
+              62.2,
+              69.5,
+              36.4,
+              45.2,
+              32.5
+            ],
+            [
+              "Walnut Brownie",
+              25.2,
+              37.1,
+              41.2,
+              18,
+              33.9,
+              49.1
+            ]
+          ]
+        },
+        "xAxis": {
+          "type": "category"
+        },
+        "yAxis": {
+          "gridIndex": 0
+        },
+        "grid": {
+          "top": "55%"
+        },
+        "series": [
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "pie",
+            "id": "pie",
+            "radius": "30%",
+            "center": [
+              "50%",
+              "25%"
+            ],
+            "emphasis": {
+              "focus": "self"
+            },
+            "label": {
+              "formatter": "{b}: {@2012} ({d}%)"
+            },
+            "encode": {
+              "itemName": "product",
+              "value": "2012",
+              "tooltip": "2012"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Scatter": [
+    {
+      "name": "scatter-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-simple.js",
+      "option": {
+        "xAxis": {},
+        "yAxis": {},
+        "series": [
+          {
+            "symbolSize": 20,
+            "data": [
+              [
+                10.0,
+                8.04
+              ],
+              [
+                8.07,
+                6.95
+              ],
+              [
+                13.0,
+                7.58
+              ],
+              [
+                9.05,
+                8.81
+              ],
+              [
+                11.0,
+                8.33
+              ],
+              [
+                14.0,
+                7.66
+              ],
+              [
+                13.4,
+                6.81
+              ],
+              [
+                10.0,
+                6.33
+              ],
+              [
+                14.0,
+                8.96
+              ],
+              [
+                12.5,
+                6.82
+              ],
+              [
+                9.15,
+                7.2
+              ],
+              [
+                11.5,
+                7.2
+              ],
+              [
+                3.03,
+                4.23
+              ],
+              [
+                12.2,
+                7.83
+              ],
+              [
+                2.02,
+                4.47
+              ],
+              [
+                1.05,
+                3.33
+              ],
+              [
+                4.05,
+                4.96
+              ],
+              [
+                6.03,
+                7.24
+              ],
+              [
+                12.0,
+                6.26
+              ],
+              [
+                12.0,
+                8.84
+              ],
+              [
+                7.08,
+                5.82
+              ],
+              [
+                5.02,
+                5.68
+              ]
+            ],
+            "type": "scatter"
+          }
+        ]
+      }
+    },
+    {
+      "name": "scatter-anscombe-quartet",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-anscombe-quartet.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 3 column 23 (char 37)"
+      }
+    },
+    {
+      "name": "scatter-clustering",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-clustering.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 17 (char 39)"
+      }
+    },
+    {
+      "name": "scatter-clustering-process",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-clustering-process.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 18 column 28 (char 368)"
+      }
+    },
+    {
+      "name": "scatter-exponential-regression",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-exponential-regression.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 27 column 19 (char 500)"
+      }
+    },
+    {
+      "name": "scatter-effect",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-effect.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 19 column 7 (char 261)"
+      }
+    },
+    {
+      "name": "scatter-linear-regression",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-linear-regression.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 17 (char 39)"
+      }
+    },
+    {
+      "name": "scatter-polynomial-regression",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-polynomial-regression.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 17 (char 39)"
+      }
+    },
+    {
+      "name": "scatter-punchCard",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-punchCard.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 18 (char 177)"
+      }
+    },
+    {
+      "name": "scatter-single-axis",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-single-axis.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 12 (char 55)"
+      }
+    },
+    {
+      "name": "scatter-weight",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-weight.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 4 column 23 (char 99)"
+      }
+    },
+    {
+      "name": "scatter-aggregate-bar",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-aggregate-bar.js"
+    },
+    {
+      "name": "scatter-label-align-right",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-label-align-right.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 16 column 15 (char 233)"
+      }
+    },
+    {
+      "name": "scatter-label-align-top",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-label-align-top.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 9 column 15 (char 109)"
+      }
+    },
+    {
+      "name": "scatter-symbol-morph",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-symbol-morph.js"
+    },
+    {
+      "name": "scatter-large",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-large.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 7 (char 33)"
+      }
+    },
+    {
+      "name": "scatter-nebula",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-nebula.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 9 (char 63)"
+      }
+    },
+    {
+      "name": "scatter-stream-visual",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-stream-visual.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 41 column 19 (char 837)"
+      }
+    },
+    {
+      "name": "bubble-gradient",
+      "link": "https://echarts.apache.org/examples/examples/js/bubble-gradient.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 22 (char 23)"
+      }
+    },
+    {
+      "name": "scatter-aqi-color",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-aqi-color.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 18 column 18 (char 332)"
+      }
+    },
+    {
+      "name": "scatter-nutrients",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-nutrients.js",
+      "option": {}
+    },
+    {
+      "name": "scatter-nutrients-matrix",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-nutrients-matrix.js",
+      "option": {}
+    },
+    {
+      "name": "scatter-polar-punchCard",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-polar-punchCard.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 18 (char 169)"
+      }
+    },
+    {
+      "name": "scatter-life-expectancy-timeline",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-life-expectancy-timeline.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 27 column 19 (char 579)"
+      }
+    },
+    {
+      "name": "scatter-painter-choice",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-painter-choice.js",
+      "option": {}
+    },
+    {
+      "name": "scatter-logarithmic-regression",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-logarithmic-regression.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 59 column 19 (char 2249)"
+      }
+    },
+    {
+      "name": "scatter-matrix",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-matrix.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 19 (char 79)"
+      }
+    },
+    {
+      "name": "calendar-charts",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-charts.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 101 column 16 (char 1863)"
+      }
+    }
+  ],
+  "GEO/Map": [
+    {
+      "name": "geo-beef-cuts",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-beef-cuts.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 38 column 32 (char 1084)"
+      }
+    },
+    {
+      "name": "geo-organ",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-organ.js",
+      "option": {
+        "tooltip": {},
+        "geo": {
+          "left": 10,
+          "right": "50%",
+          "map": "organ_diagram",
+          "selectedMode": "multiple",
+          "emphasis": {
+            "focus": "self",
+            "itemStyle": {
+              "color": null
+            },
+            "label": {
+              "position": "bottom",
+              "distance": 0,
+              "textBorderColor": "#fff",
+              "textBorderWidth": 2
+            }
+          },
+          "blur": {},
+          "select": {
+            "itemStyle": {
+              "color": "#b50205"
+            },
+            "label": {
+              "show": false,
+              "textBorderColor": "#fff",
+              "textBorderWidth": 2
+            }
+          }
+        },
+        "grid": {
+          "left": "60%",
+          "top": "20%",
+          "bottom": "20%"
+        },
+        "xAxis": {},
+        "yAxis": {
+          "data": [
+            "heart",
+            "large-intestine",
+            "small-intestine",
+            "spleen",
+            "kidney",
+            "lung",
+            "liver"
+          ]
+        },
+        "series": [
+          {
+            "type": "bar",
+            "emphasis": {
+              "focus": "self"
+            },
+            "data": [
+              121,
+              321,
+              141,
+              52,
+              198,
+              289,
+              139
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "geo-seatmap-flight",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-seatmap-flight.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 17 column 20 (char 347)"
+      }
+    },
+    {
+      "name": "geo-svg-lines",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-svg-lines.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 13 column 22 (char 277)"
+      }
+    },
+    {
+      "name": "geo-svg-map",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-svg-map.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 22 (char 42)"
+      }
+    },
+    {
+      "name": "geo-svg-scatter-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-svg-scatter-simple.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 14 column 21 (char 258)"
+      }
+    },
+    {
+      "name": "geo-svg-traffic",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-svg-traffic.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 29 column 11 (char 598)"
+      }
+    },
+    {
+      "name": "lines-ny",
+      "link": "https://echarts.apache.org/examples/examples/js/lines-ny.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 22 column 15 (char 476)"
+      }
+    },
+    {
+      "name": "map-bar-morph",
+      "link": "https://echarts.apache.org/examples/examples/js/map-bar-morph.js",
+      "option": {}
+    },
+    {
+      "name": "map-HK",
+      "link": "https://echarts.apache.org/examples/examples/js/map-HK.js",
+      "option": {}
+    },
+    {
+      "name": "map-usa",
+      "link": "https://echarts.apache.org/examples/examples/js/map-usa.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 5 column 20 (char 130)"
+      }
+    },
+    {
+      "name": "map-usa-pie",
+      "link": "https://echarts.apache.org/examples/examples/js/map-usa-pie.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 12 column 7 (char 181)"
+      }
+    },
+    {
+      "name": "map-usa-projection",
+      "link": "https://echarts.apache.org/examples/examples/js/map-usa-projection.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 5 column 20 (char 130)"
+      }
+    },
+    {
+      "name": "custom-hexbin",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-hexbin.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 24 (char 25)"
+      }
+    }
+  ],
+  "Candlestick": [
+    {
+      "name": "candlestick-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/candlestick-simple.js",
+      "option": {
+        "xAxis": {
+          "data": [
+            "2017-10-24",
+            "2017-10-25",
+            "2017-10-26",
+            "2017-10-27"
+          ]
+        },
+        "yAxis": {},
+        "series": [
+          {
+            "type": "candlestick",
+            "data": [
+              [
+                20,
+                34,
+                10,
+                38
+              ],
+              [
+                40,
+                35,
+                30,
+                50
+              ],
+              [
+                31,
+                38,
+                33,
+                44
+              ],
+              [
+                38,
+                15,
+                5,
+                42
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "custom-ohlc",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-ohlc.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 13 column 21 (char 267)"
+      }
+    },
+    {
+      "name": "candlestick-sh",
+      "link": "https://echarts.apache.org/examples/examples/js/candlestick-sh.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 22 column 13 (char 340)"
+      }
+    },
+    {
+      "name": "candlestick-large",
+      "link": "https://echarts.apache.org/examples/examples/js/candlestick-large.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 15 (char 31)"
+      }
+    },
+    {
+      "name": "candlestick-touch",
+      "link": "https://echarts.apache.org/examples/examples/js/candlestick-touch.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 12 (char 35)"
+      }
+    },
+    {
+      "name": "candlestick-brush",
+      "link": "https://echarts.apache.org/examples/examples/js/candlestick-brush.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 19 column 21 (char 438)"
+      }
+    },
+    {
+      "name": "candlestick-sh-2015",
+      "link": "https://echarts.apache.org/examples/examples/js/candlestick-sh-2015.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 20 column 13 (char 366)"
+      }
+    }
+  ],
+  "Radar": [
+    {
+      "name": "radar",
+      "link": "https://echarts.apache.org/examples/examples/js/radar.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 9 column 5 (char 140)"
+      }
+    },
+    {
+      "name": "radar-aqi",
+      "link": "https://echarts.apache.org/examples/examples/js/radar-aqi.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 43 column 10 (char 1011)"
+      }
+    },
+    {
+      "name": "radar-custom",
+      "link": "https://echarts.apache.org/examples/examples/js/radar-custom.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 98 column 26 (char 2281)"
+      }
+    },
+    {
+      "name": "radar2",
+      "link": "https://echarts.apache.org/examples/examples/js/radar2.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 14 column 13 (char 224)"
+      }
+    },
+    {
+      "name": "radar-multiple",
+      "link": "https://echarts.apache.org/examples/examples/js/radar-multiple.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 41 column 20 (char 864)"
+      }
+    }
+  ],
+  "Boxplot": [
+    {
+      "name": "data-transform-aggregate",
+      "link": "https://echarts.apache.org/examples/examples/js/data-transform-aggregate.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 19 (char 66)"
+      }
+    },
+    {
+      "name": "boxplot-light-velocity",
+      "link": "https://echarts.apache.org/examples/examples/js/boxplot-light-velocity.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 8 column 17 (char 118)"
+      }
+    },
+    {
+      "name": "boxplot-light-velocity2",
+      "link": "https://echarts.apache.org/examples/examples/js/boxplot-light-velocity2.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 8 column 17 (char 118)"
+      }
+    },
+    {
+      "name": "boxplot-multi",
+      "link": "https://echarts.apache.org/examples/examples/js/boxplot-multi.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 8 column 17 (char 113)"
+      }
+    }
+  ],
+  "Heatmap": [
+    {
+      "name": "heatmap-cartesian",
+      "link": "https://echarts.apache.org/examples/examples/js/heatmap-cartesian.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 13 (char 148)"
+      }
+    },
+    {
+      "name": "heatmap-large",
+      "link": "https://echarts.apache.org/examples/examples/js/heatmap-large.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 13 (char 68)"
+      }
+    },
+    {
+      "name": "heatmap-large-piecewise",
+      "link": "https://echarts.apache.org/examples/examples/js/heatmap-large-piecewise.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 9 column 13 (char 118)"
+      }
+    },
+    {
+      "name": "calendar-heatmap",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-heatmap.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 30 column 13 (char 540)"
+      }
+    },
+    {
+      "name": "calendar-vertical",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-vertical.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 18 (char 57)"
+      }
+    }
+  ],
+  "Graph": [
+    {
+      "name": "graph-force2",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-force2.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 13 (char 14)"
+      }
+    },
+    {
+      "name": "graph-grid",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-grid.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 9 column 13 (char 145)"
+      }
+    },
+    {
+      "name": "graph-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-simple.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 44 column 7 (char 808)"
+      }
+    },
+    {
+      "name": "graph-force",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-force.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 11 column 9 (char 187)"
+      }
+    },
+    {
+      "name": "graph-label-overlap",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-label-overlap.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 17 (char 61)"
+      }
+    },
+    {
+      "name": "graph",
+      "link": "https://echarts.apache.org/examples/examples/js/graph.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 11 column 9 (char 187)"
+      }
+    },
+    {
+      "name": "graph-circular-layout",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-circular-layout.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 17 (char 196)"
+      }
+    },
+    {
+      "name": "graph-force-dynamic",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-force-dynamic.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 7 column 15 (char 110)"
+      }
+    },
+    {
+      "name": "graph-life-expectancy",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-life-expectancy.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 9 column 15 (char 134)"
+      }
+    },
+    {
+      "name": "graph-webkit-dep",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-webkit-dep.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 15 column 17 (char 324)"
+      }
+    },
+    {
+      "name": "graph-npm",
+      "link": "https://echarts.apache.org/examples/examples/js/graph-npm.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 11 column 13 (char 262)"
+      }
+    },
+    {
+      "name": "calendar-graph",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-graph.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 41 column 16 (char 783)"
+      }
+    }
+  ],
+  "Lines": [
+    {
+      "name": "lines-ny",
+      "link": "https://echarts.apache.org/examples/examples/js/lines-ny.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 22 column 15 (char 476)"
+      }
+    }
+  ],
+  "Tree": [
+    {
+      "name": "tree-basic",
+      "link": "https://echarts.apache.org/examples/examples/js/tree-basic.js",
+      "option": {}
+    },
+    {
+      "name": "tree-legend",
+      "link": "https://echarts.apache.org/examples/examples/js/tree-legend.js",
+      "option": {}
+    },
+    {
+      "name": "tree-orient-bottom-top",
+      "link": "https://echarts.apache.org/examples/examples/js/tree-orient-bottom-top.js",
+      "option": {}
+    },
+    {
+      "name": "tree-orient-right-left",
+      "link": "https://echarts.apache.org/examples/examples/js/tree-orient-right-left.js",
+      "option": {}
+    },
+    {
+      "name": "tree-polyline",
+      "link": "https://echarts.apache.org/examples/examples/js/tree-polyline.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 16 (char 169)"
+      }
+    },
+    {
+      "name": "tree-radial",
+      "link": "https://echarts.apache.org/examples/examples/js/tree-radial.js",
+      "option": {}
+    },
+    {
+      "name": "tree-vertical",
+      "link": "https://echarts.apache.org/examples/examples/js/tree-vertical.js",
+      "option": {}
+    }
+  ],
+  "Treemap": [
+    {
+      "name": "treemap-sunburst-transition",
+      "link": "https://echarts.apache.org/examples/examples/js/treemap-sunburst-transition.js"
+    },
+    {
+      "name": "treemap-disk",
+      "link": "https://echarts.apache.org/examples/examples/js/treemap-disk.js",
+      "option": {}
+    },
+    {
+      "name": "treemap-drill-down",
+      "link": "https://echarts.apache.org/examples/examples/js/treemap-drill-down.js",
+      "option": {}
+    },
+    {
+      "name": "treemap-obama",
+      "link": "https://echarts.apache.org/examples/examples/js/treemap-obama.js",
+      "option": {}
+    },
+    {
+      "name": "treemap-show-parent",
+      "link": "https://echarts.apache.org/examples/examples/js/treemap-show-parent.js",
+      "option": {}
+    },
+    {
+      "name": "treemap-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/treemap-simple.js",
+      "option": {
+        "series": [
+          {
+            "type": "treemap",
+            "data": [
+              {
+                "name": "nodeA",
+                "value": 10,
+                "children": [
+                  {
+                    "name": "nodeAa",
+                    "value": 4
+                  },
+                  {
+                    "name": "nodeAb",
+                    "value": 6
+                  }
+                ]
+              },
+              {
+                "name": "nodeB",
+                "value": 20,
+                "children": [
+                  {
+                    "name": "nodeBa",
+                    "value": 20,
+                    "children": [
+                      {
+                        "name": "nodeBa1",
+                        "value": 20
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "treemap-visual",
+      "link": "https://echarts.apache.org/examples/examples/js/treemap-visual.js",
+      "option": {}
+    }
+  ],
+  "Sunburst": [
+    {
+      "name": "sunburst-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/sunburst-simple.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 4 column 5 (char 44)"
+      }
+    },
+    {
+      "name": "sunburst-borderRadius",
+      "link": "https://echarts.apache.org/examples/examples/js/sunburst-borderRadius.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 13 (char 52)"
+      }
+    },
+    {
+      "name": "sunburst-label-rotate",
+      "link": "https://echarts.apache.org/examples/examples/js/sunburst-label-rotate.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 7 column 15 (char 112)"
+      }
+    },
+    {
+      "name": "sunburst-monochrome",
+      "link": "https://echarts.apache.org/examples/examples/js/sunburst-monochrome.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 13 (char 82)"
+      }
+    },
+    {
+      "name": "sunburst-visualMap",
+      "link": "https://echarts.apache.org/examples/examples/js/sunburst-visualMap.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 12 column 13 (char 212)"
+      }
+    },
+    {
+      "name": "sunburst-drink",
+      "link": "https://echarts.apache.org/examples/examples/js/sunburst-drink.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 4 column 18 (char 85)"
+      }
+    },
+    {
+      "name": "sunburst-book",
+      "link": "https://echarts.apache.org/examples/examples/js/sunburst-book.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 22 (char 23)"
+      }
+    }
+  ],
+  "Parallel": [
+    {
+      "name": "parallel-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/parallel-simple.js",
+      "option": {
+        "parallelAxis": [
+          {
+            "dim": 0,
+            "name": "Price"
+          },
+          {
+            "dim": 1,
+            "name": "Net Weight"
+          },
+          {
+            "dim": 2,
+            "name": "Amount"
+          },
+          {
+            "dim": 3,
+            "name": "Score",
+            "type": "category",
+            "data": [
+              "Excellent",
+              "Good",
+              "OK",
+              "Bad"
+            ]
+          }
+        ],
+        "series": {
+          "type": "parallel",
+          "lineStyle": {
+            "width": 4
+          },
+          "data": [
+            [
+              12.99,
+              100,
+              82,
+              "Good"
+            ],
+            [
+              9.99,
+              80,
+              77,
+              "OK"
+            ],
+            [
+              20,
+              120,
+              60,
+              "Excellent"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "parallel-aqi",
+      "link": "https://echarts.apache.org/examples/examples/js/parallel-aqi.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 21 column 15 (char 380)"
+      }
+    },
+    {
+      "name": "parallel-nutrients",
+      "link": "https://echarts.apache.org/examples/examples/js/parallel-nutrients.js",
+      "option": {}
+    },
+    {
+      "name": "scatter-matrix",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter-matrix.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 19 (char 79)"
+      }
+    }
+  ],
+  "Sankey": [
+    {
+      "name": "sankey-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/sankey-simple.js",
+      "option": {
+        "series": {
+          "type": "sankey",
+          "layout": "none",
+          "emphasis": {
+            "focus": "adjacency"
+          },
+          "data": [
+            {
+              "name": "a"
+            },
+            {
+              "name": "b"
+            },
+            {
+              "name": "a1"
+            },
+            {
+              "name": "a2"
+            },
+            {
+              "name": "b1"
+            },
+            {
+              "name": "c"
+            }
+          ],
+          "links": [
+            {
+              "source": "a",
+              "target": "a1",
+              "value": 5
+            },
+            {
+              "source": "a",
+              "target": "a2",
+              "value": 3
+            },
+            {
+              "source": "b",
+              "target": "b1",
+              "value": 8
+            },
+            {
+              "source": "a",
+              "target": "b1",
+              "value": 3
+            },
+            {
+              "source": "b1",
+              "target": "a1",
+              "value": 1
+            },
+            {
+              "source": "b1",
+              "target": "c",
+              "value": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "sankey-vertical",
+      "link": "https://echarts.apache.org/examples/examples/js/sankey-vertical.js",
+      "option": {
+        "tooltip": {
+          "trigger": "item",
+          "triggerOn": "mousemove"
+        },
+        "animation": false,
+        "series": [
+          {
+            "type": "sankey",
+            "bottom": "10%",
+            "emphasis": {
+              "focus": "adjacency"
+            },
+            "data": [
+              {
+                "name": "a"
+              },
+              {
+                "name": "b"
+              },
+              {
+                "name": "a1"
+              },
+              {
+                "name": "b1"
+              },
+              {
+                "name": "c"
+              },
+              {
+                "name": "e"
+              }
+            ],
+            "links": [
+              {
+                "source": "a",
+                "target": "a1",
+                "value": 5
+              },
+              {
+                "source": "e",
+                "target": "b",
+                "value": 3
+              },
+              {
+                "source": "a",
+                "target": "b1",
+                "value": 3
+              },
+              {
+                "source": "b1",
+                "target": "a1",
+                "value": 1
+              },
+              {
+                "source": "b1",
+                "target": "c",
+                "value": 2
+              },
+              {
+                "source": "b",
+                "target": "c",
+                "value": 1
+              }
+            ],
+            "orient": "vertical",
+            "label": {
+              "position": "top"
+            },
+            "lineStyle": {
+              "color": "source",
+              "curveness": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "sankey-itemstyle",
+      "link": "https://echarts.apache.org/examples/examples/js/sankey-itemstyle.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 450 column 33 (char 10182)"
+      }
+    },
+    {
+      "name": "sankey-levels",
+      "link": "https://echarts.apache.org/examples/examples/js/sankey-levels.js",
+      "option": {}
+    },
+    {
+      "name": "sankey-energy",
+      "link": "https://echarts.apache.org/examples/examples/js/sankey-energy.js",
+      "option": {}
+    },
+    {
+      "name": "sankey-nodeAlign-left",
+      "link": "https://echarts.apache.org/examples/examples/js/sankey-nodeAlign-left.js",
+      "option": {}
+    },
+    {
+      "name": "sankey-nodeAlign-right",
+      "link": "https://echarts.apache.org/examples/examples/js/sankey-nodeAlign-right.js",
+      "option": {}
+    }
+  ],
+  "Funnel": [
+    {
+      "name": "funnel",
+      "link": "https://echarts.apache.org/examples/examples/js/funnel.js",
+      "option": {
+        "title": {
+          "text": "Funnel"
+        },
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b} : {c}%"
+        },
+        "toolbox": {
+          "feature": {
+            "dataView": {
+              "readOnly": false
+            },
+            "restore": {},
+            "saveAsImage": {}
+          }
+        },
+        "legend": {
+          "data": [
+            "Show",
+            "Click",
+            "Visit",
+            "Inquiry",
+            "Order"
+          ]
+        },
+        "series": [
+          {
+            "name": "Funnel",
+            "type": "funnel",
+            "left": "10%",
+            "top": 60,
+            "bottom": 60,
+            "width": "80%",
+            "min": 0,
+            "max": 100,
+            "minSize": "0%",
+            "maxSize": "100%",
+            "sort": "descending",
+            "gap": 2,
+            "label": {
+              "show": true,
+              "position": "inside"
+            },
+            "labelLine": {
+              "length": 10,
+              "lineStyle": {
+                "width": 1,
+                "type": "solid"
+              }
+            },
+            "itemStyle": {
+              "borderColor": "#fff",
+              "borderWidth": 1
+            },
+            "emphasis": {
+              "label": {
+                "fontSize": 20
+              }
+            },
+            "data": [
+              {
+                "value": 60,
+                "name": "Visit"
+              },
+              {
+                "value": 40,
+                "name": "Inquiry"
+              },
+              {
+                "value": 20,
+                "name": "Order"
+              },
+              {
+                "value": 80,
+                "name": "Click"
+              },
+              {
+                "value": 100,
+                "name": "Show"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "funnel-align",
+      "link": "https://echarts.apache.org/examples/examples/js/funnel-align.js",
+      "option": {
+        "title": {
+          "text": "Funnel Compare",
+          "subtext": "Fake Data",
+          "left": "left",
+          "top": "bottom"
+        },
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b} : {c}%"
+        },
+        "toolbox": {
+          "show": true,
+          "orient": "vertical",
+          "top": "center",
+          "feature": {
+            "dataView": {
+              "readOnly": false
+            },
+            "restore": {},
+            "saveAsImage": {}
+          }
+        },
+        "legend": {
+          "orient": "vertical",
+          "left": "left",
+          "data": [
+            "Prod A",
+            "Prod B",
+            "Prod C",
+            "Prod D",
+            "Prod E"
+          ]
+        },
+        "series": [
+          {
+            "name": "Funnel",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "5%",
+            "top": "50%",
+            "funnelAlign": "right",
+            "data": [
+              {
+                "value": 60,
+                "name": "Prod C"
+              },
+              {
+                "value": 30,
+                "name": "Prod D"
+              },
+              {
+                "value": 10,
+                "name": "Prod E"
+              },
+              {
+                "value": 80,
+                "name": "Prod B"
+              },
+              {
+                "value": 100,
+                "name": "Prod A"
+              }
+            ]
+          },
+          {
+            "name": "Pyramid",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "5%",
+            "top": "5%",
+            "sort": "ascending",
+            "funnelAlign": "right",
+            "data": [
+              {
+                "value": 60,
+                "name": "Prod C"
+              },
+              {
+                "value": 30,
+                "name": "Prod D"
+              },
+              {
+                "value": 10,
+                "name": "Prod E"
+              },
+              {
+                "value": 80,
+                "name": "Prod B"
+              },
+              {
+                "value": 100,
+                "name": "Prod A"
+              }
+            ]
+          },
+          {
+            "name": "Funnel",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "55%",
+            "top": "5%",
+            "funnelAlign": "left",
+            "data": [
+              {
+                "value": 60,
+                "name": "Prod C"
+              },
+              {
+                "value": 30,
+                "name": "Prod D"
+              },
+              {
+                "value": 10,
+                "name": "Prod E"
+              },
+              {
+                "value": 80,
+                "name": "Prod B"
+              },
+              {
+                "value": 100,
+                "name": "Prod A"
+              }
+            ]
+          },
+          {
+            "name": "Pyramid",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "55%",
+            "top": "50%",
+            "sort": "ascending",
+            "funnelAlign": "left",
+            "data": [
+              {
+                "value": 60,
+                "name": "Prod C"
+              },
+              {
+                "value": 30,
+                "name": "Prod D"
+              },
+              {
+                "value": 10,
+                "name": "Prod E"
+              },
+              {
+                "value": 80,
+                "name": "Prod B"
+              },
+              {
+                "value": 100,
+                "name": "Prod A"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "funnel-customize",
+      "link": "https://echarts.apache.org/examples/examples/js/funnel-customize.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 37 column 29 (char 708)"
+      }
+    },
+    {
+      "name": "funnel-mutiple",
+      "link": "https://echarts.apache.org/examples/examples/js/funnel-mutiple.js",
+      "option": {
+        "title": {
+          "text": "Funnel",
+          "left": "left",
+          "top": "bottom"
+        },
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b} : {c}%"
+        },
+        "toolbox": {
+          "orient": "vertical",
+          "top": "center",
+          "feature": {
+            "dataView": {
+              "readOnly": false
+            },
+            "restore": {},
+            "saveAsImage": {}
+          }
+        },
+        "legend": {
+          "orient": "vertical",
+          "left": "left",
+          "data": [
+            "Show",
+            "Click",
+            "Visit",
+            "Inquiry",
+            "Order"
+          ]
+        },
+        "series": [
+          {
+            "name": "Funnel",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "5%",
+            "top": "50%",
+            "data": [
+              {
+                "value": 60,
+                "name": "Visit"
+              },
+              {
+                "value": 30,
+                "name": "Inquiry"
+              },
+              {
+                "value": 10,
+                "name": "Order"
+              },
+              {
+                "value": 80,
+                "name": "Click"
+              },
+              {
+                "value": 100,
+                "name": "Show"
+              }
+            ]
+          },
+          {
+            "name": "Pyramid",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "5%",
+            "top": "5%",
+            "sort": "ascending",
+            "data": [
+              {
+                "value": 60,
+                "name": "Visit"
+              },
+              {
+                "value": 30,
+                "name": "Inquiry"
+              },
+              {
+                "value": 10,
+                "name": "Order"
+              },
+              {
+                "value": 80,
+                "name": "Click"
+              },
+              {
+                "value": 100,
+                "name": "Show"
+              }
+            ]
+          },
+          {
+            "name": "Funnel",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "55%",
+            "top": "5%",
+            "label": {
+              "position": "left"
+            },
+            "data": [
+              {
+                "value": 60,
+                "name": "Visit"
+              },
+              {
+                "value": 30,
+                "name": "Inquiry"
+              },
+              {
+                "value": 10,
+                "name": "Order"
+              },
+              {
+                "value": 80,
+                "name": "Click"
+              },
+              {
+                "value": 100,
+                "name": "Show"
+              }
+            ]
+          },
+          {
+            "name": "Pyramid",
+            "type": "funnel",
+            "width": "40%",
+            "height": "45%",
+            "left": "55%",
+            "top": "50%",
+            "sort": "ascending",
+            "label": {
+              "position": "left"
+            },
+            "data": [
+              {
+                "value": 60,
+                "name": "Visit"
+              },
+              {
+                "value": 30,
+                "name": "Inquiry"
+              },
+              {
+                "value": 10,
+                "name": "Order"
+              },
+              {
+                "value": 80,
+                "name": "Click"
+              },
+              {
+                "value": 100,
+                "name": "Show"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "Gauge": [
+    {
+      "name": "gauge",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge.js",
+      "option": {
+        "tooltip": {
+          "formatter": "{a} <br/>{b} : {c}%"
+        },
+        "series": [
+          {
+            "name": "Pressure",
+            "type": "gauge",
+            "detail": {
+              "formatter": "{value}"
+            },
+            "data": [
+              {
+                "value": 50,
+                "name": "SCORE"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "gauge-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-simple.js",
+      "option": {
+        "tooltip": {
+          "formatter": "{a} <br/>{b} : {c}%"
+        },
+        "series": [
+          {
+            "name": "Pressure",
+            "type": "gauge",
+            "progress": {
+              "show": true
+            },
+            "detail": {
+              "valueAnimation": true,
+              "formatter": "{value}"
+            },
+            "data": [
+              {
+                "value": 50,
+                "name": "SCORE"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "gauge-speed",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-speed.js",
+      "option": {
+        "series": [
+          {
+            "type": "gauge",
+            "progress": {
+              "show": true,
+              "width": 18
+            },
+            "axisLine": {
+              "lineStyle": {
+                "width": 18
+              }
+            },
+            "axisTick": {
+              "show": false
+            },
+            "splitLine": {
+              "length": 15,
+              "lineStyle": {
+                "width": 2,
+                "color": "#999"
+              }
+            },
+            "axisLabel": {
+              "distance": 25,
+              "color": "#999",
+              "fontSize": 20
+            },
+            "anchor": {
+              "show": true,
+              "showAbove": true,
+              "size": 25,
+              "itemStyle": {
+                "borderWidth": 10
+              }
+            },
+            "title": {
+              "show": false
+            },
+            "detail": {
+              "valueAnimation": true,
+              "fontSize": 80,
+              "offsetCenter": [
+                0,
+                "70%"
+              ]
+            },
+            "data": [
+              {
+                "value": 70
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "gauge-progress",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-progress.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 23 column 19 (char 470)"
+      }
+    },
+    {
+      "name": "gauge-stage",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-stage.js",
+      "option": {
+        "series": [
+          {
+            "type": "gauge",
+            "axisLine": {
+              "lineStyle": {
+                "width": 30,
+                "color": [
+                  [
+                    0.3,
+                    "#67e0e3"
+                  ],
+                  [
+                    0.7,
+                    "#37a2da"
+                  ],
+                  [
+                    1,
+                    "#fd666d"
+                  ]
+                ]
+              }
+            },
+            "pointer": {
+              "itemStyle": {
+                "color": "auto"
+              }
+            },
+            "axisTick": {
+              "distance": -30,
+              "length": 8,
+              "lineStyle": {
+                "color": "#fff",
+                "width": 2
+              }
+            },
+            "splitLine": {
+              "distance": -30,
+              "length": 30,
+              "lineStyle": {
+                "color": "#fff",
+                "width": 4
+              }
+            },
+            "axisLabel": {
+              "color": "inherit",
+              "distance": 40,
+              "fontSize": 20
+            },
+            "detail": {
+              "valueAnimation": true,
+              "formatter": "{value} km/h",
+              "color": "inherit"
+            },
+            "data": [
+              {
+                "value": 70
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "gauge-grade",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-grade.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 24 column 19 (char 475)"
+      }
+    },
+    {
+      "name": "gauge-multi-title",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-multi-title.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 14 column 19 (char 240)"
+      }
+    },
+    {
+      "name": "gauge-temperature",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-temperature.js",
+      "option": {
+        "series": [
+          {
+            "type": "gauge",
+            "center": [
+              "50%",
+              "60%"
+            ],
+            "startAngle": 200,
+            "endAngle": -20,
+            "min": 0,
+            "max": 60,
+            "splitNumber": 12,
+            "itemStyle": {
+              "color": "#FFAB91"
+            },
+            "progress": {
+              "show": true,
+              "width": 30
+            },
+            "pointer": {
+              "show": false
+            },
+            "axisLine": {
+              "lineStyle": {
+                "width": 30
+              }
+            },
+            "axisTick": {
+              "distance": -45,
+              "splitNumber": 5,
+              "lineStyle": {
+                "width": 2,
+                "color": "#999"
+              }
+            },
+            "splitLine": {
+              "distance": -52,
+              "length": 14,
+              "lineStyle": {
+                "width": 3,
+                "color": "#999"
+              }
+            },
+            "axisLabel": {
+              "distance": -20,
+              "color": "#999",
+              "fontSize": 20
+            },
+            "anchor": {
+              "show": false
+            },
+            "title": {
+              "show": false
+            },
+            "detail": {
+              "valueAnimation": true,
+              "width": "60%",
+              "lineHeight": 40,
+              "borderRadius": 8,
+              "offsetCenter": [
+                0,
+                "-15%"
+              ],
+              "fontSize": 60,
+              "fontWeight": "bolder",
+              "formatter": "{value} \u00b0C",
+              "color": "inherit"
+            },
+            "data": [
+              {
+                "value": 20
+              }
+            ]
+          },
+          {
+            "type": "gauge",
+            "center": [
+              "50%",
+              "60%"
+            ],
+            "startAngle": 200,
+            "endAngle": -20,
+            "min": 0,
+            "max": 60,
+            "itemStyle": {
+              "color": "#FD7347"
+            },
+            "progress": {
+              "show": true,
+              "width": 8
+            },
+            "pointer": {
+              "show": false
+            },
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "splitLine": {
+              "show": false
+            },
+            "axisLabel": {
+              "show": false
+            },
+            "detail": {
+              "show": false
+            },
+            "data": [
+              {
+                "value": 20
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "gauge-ring",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-ring.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 37 column 15 (char 687)"
+      }
+    },
+    {
+      "name": "gauge-barometer",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-barometer.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 44 column 19 (char 853)"
+      }
+    },
+    {
+      "name": "gauge-clock",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-clock.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 31 column 22 (char 688)"
+      }
+    },
+    {
+      "name": "gauge-car",
+      "link": "https://echarts.apache.org/examples/examples/js/gauge-car.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 13 column 5 (char 196)"
+      }
+    }
+  ],
+  "PictorialBar": [
+    {
+      "name": "pictorialBar-bar-transition",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-bar-transition.js"
+    },
+    {
+      "name": "pictorialBar-body-fill",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-body-fill.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 14 column 12 (char 285)"
+      }
+    },
+    {
+      "name": "pictorialBar-dotted",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-dotted.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 16 column 13 (char 247)"
+      }
+    },
+    {
+      "name": "pictorialBar-forest",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-forest.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 8 column 13 (char 193)"
+      }
+    },
+    {
+      "name": "pictorialBar-hill",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-hill.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 46 column 23 (char 961)"
+      }
+    },
+    {
+      "name": "pictorialBar-spirit",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-spirit.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 12 (char 43)"
+      }
+    },
+    {
+      "name": "pictorialBar-vehicle",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-vehicle.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 44 column 16 (char 828)"
+      }
+    },
+    {
+      "name": "pictorialBar-velocity",
+      "link": "https://echarts.apache.org/examples/examples/js/pictorialBar-velocity.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 7 column 18 (char 106)"
+      }
+    }
+  ],
+  "ThemeRiver": [
+    {
+      "name": "themeRiver-basic",
+      "link": "https://echarts.apache.org/examples/examples/js/themeRiver-basic.js",
+      "option": {
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "line",
+            "lineStyle": {
+              "color": "rgba(0,0,0,0.2)",
+              "width": 1,
+              "type": "solid"
+            }
+          }
+        },
+        "legend": {
+          "data": [
+            "DQ",
+            "TY",
+            "SS",
+            "QG",
+            "SY",
+            "DD"
+          ]
+        },
+        "singleAxis": {
+          "top": 50,
+          "bottom": 50,
+          "axisTick": {},
+          "axisLabel": {},
+          "type": "time",
+          "axisPointer": {
+            "animation": true,
+            "label": {
+              "show": true
+            }
+          },
+          "splitLine": {
+            "show": true,
+            "lineStyle": {
+              "type": "dashed",
+              "opacity": 0.2
+            }
+          }
+        },
+        "series": [
+          {
+            "type": "themeRiver",
+            "emphasis": {
+              "itemStyle": {
+                "shadowBlur": 20,
+                "shadowColor": "rgba(0, 0, 0, 0.8)"
+              }
+            },
+            "data": [
+              [
+                "2015/11/08",
+                10,
+                "DQ"
+              ],
+              [
+                "2015/11/09",
+                15,
+                "DQ"
+              ],
+              [
+                "2015/11/10",
+                35,
+                "DQ"
+              ],
+              [
+                "2015/11/11",
+                38,
+                "DQ"
+              ],
+              [
+                "2015/11/12",
+                22,
+                "DQ"
+              ],
+              [
+                "2015/11/13",
+                16,
+                "DQ"
+              ],
+              [
+                "2015/11/14",
+                7,
+                "DQ"
+              ],
+              [
+                "2015/11/15",
+                2,
+                "DQ"
+              ],
+              [
+                "2015/11/16",
+                17,
+                "DQ"
+              ],
+              [
+                "2015/11/17",
+                33,
+                "DQ"
+              ],
+              [
+                "2015/11/18",
+                40,
+                "DQ"
+              ],
+              [
+                "2015/11/19",
+                32,
+                "DQ"
+              ],
+              [
+                "2015/11/20",
+                26,
+                "DQ"
+              ],
+              [
+                "2015/11/21",
+                35,
+                "DQ"
+              ],
+              [
+                "2015/11/22",
+                40,
+                "DQ"
+              ],
+              [
+                "2015/11/23",
+                32,
+                "DQ"
+              ],
+              [
+                "2015/11/24",
+                26,
+                "DQ"
+              ],
+              [
+                "2015/11/25",
+                22,
+                "DQ"
+              ],
+              [
+                "2015/11/26",
+                16,
+                "DQ"
+              ],
+              [
+                "2015/11/27",
+                22,
+                "DQ"
+              ],
+              [
+                "2015/11/28",
+                10,
+                "DQ"
+              ],
+              [
+                "2015/11/08",
+                35,
+                "TY"
+              ],
+              [
+                "2015/11/09",
+                36,
+                "TY"
+              ],
+              [
+                "2015/11/10",
+                37,
+                "TY"
+              ],
+              [
+                "2015/11/11",
+                22,
+                "TY"
+              ],
+              [
+                "2015/11/12",
+                24,
+                "TY"
+              ],
+              [
+                "2015/11/13",
+                26,
+                "TY"
+              ],
+              [
+                "2015/11/14",
+                34,
+                "TY"
+              ],
+              [
+                "2015/11/15",
+                21,
+                "TY"
+              ],
+              [
+                "2015/11/16",
+                18,
+                "TY"
+              ],
+              [
+                "2015/11/17",
+                45,
+                "TY"
+              ],
+              [
+                "2015/11/18",
+                32,
+                "TY"
+              ],
+              [
+                "2015/11/19",
+                35,
+                "TY"
+              ],
+              [
+                "2015/11/20",
+                30,
+                "TY"
+              ],
+              [
+                "2015/11/21",
+                28,
+                "TY"
+              ],
+              [
+                "2015/11/22",
+                27,
+                "TY"
+              ],
+              [
+                "2015/11/23",
+                26,
+                "TY"
+              ],
+              [
+                "2015/11/24",
+                15,
+                "TY"
+              ],
+              [
+                "2015/11/25",
+                30,
+                "TY"
+              ],
+              [
+                "2015/11/26",
+                35,
+                "TY"
+              ],
+              [
+                "2015/11/27",
+                42,
+                "TY"
+              ],
+              [
+                "2015/11/28",
+                42,
+                "TY"
+              ],
+              [
+                "2015/11/08",
+                21,
+                "SS"
+              ],
+              [
+                "2015/11/09",
+                25,
+                "SS"
+              ],
+              [
+                "2015/11/10",
+                27,
+                "SS"
+              ],
+              [
+                "2015/11/11",
+                23,
+                "SS"
+              ],
+              [
+                "2015/11/12",
+                24,
+                "SS"
+              ],
+              [
+                "2015/11/13",
+                21,
+                "SS"
+              ],
+              [
+                "2015/11/14",
+                35,
+                "SS"
+              ],
+              [
+                "2015/11/15",
+                39,
+                "SS"
+              ],
+              [
+                "2015/11/16",
+                40,
+                "SS"
+              ],
+              [
+                "2015/11/17",
+                36,
+                "SS"
+              ],
+              [
+                "2015/11/18",
+                33,
+                "SS"
+              ],
+              [
+                "2015/11/19",
+                43,
+                "SS"
+              ],
+              [
+                "2015/11/20",
+                40,
+                "SS"
+              ],
+              [
+                "2015/11/21",
+                34,
+                "SS"
+              ],
+              [
+                "2015/11/22",
+                28,
+                "SS"
+              ],
+              [
+                "2015/11/23",
+                26,
+                "SS"
+              ],
+              [
+                "2015/11/24",
+                37,
+                "SS"
+              ],
+              [
+                "2015/11/25",
+                41,
+                "SS"
+              ],
+              [
+                "2015/11/26",
+                46,
+                "SS"
+              ],
+              [
+                "2015/11/27",
+                47,
+                "SS"
+              ],
+              [
+                "2015/11/28",
+                41,
+                "SS"
+              ],
+              [
+                "2015/11/08",
+                10,
+                "QG"
+              ],
+              [
+                "2015/11/09",
+                15,
+                "QG"
+              ],
+              [
+                "2015/11/10",
+                35,
+                "QG"
+              ],
+              [
+                "2015/11/11",
+                38,
+                "QG"
+              ],
+              [
+                "2015/11/12",
+                22,
+                "QG"
+              ],
+              [
+                "2015/11/13",
+                16,
+                "QG"
+              ],
+              [
+                "2015/11/14",
+                7,
+                "QG"
+              ],
+              [
+                "2015/11/15",
+                2,
+                "QG"
+              ],
+              [
+                "2015/11/16",
+                17,
+                "QG"
+              ],
+              [
+                "2015/11/17",
+                33,
+                "QG"
+              ],
+              [
+                "2015/11/18",
+                40,
+                "QG"
+              ],
+              [
+                "2015/11/19",
+                32,
+                "QG"
+              ],
+              [
+                "2015/11/20",
+                26,
+                "QG"
+              ],
+              [
+                "2015/11/21",
+                35,
+                "QG"
+              ],
+              [
+                "2015/11/22",
+                40,
+                "QG"
+              ],
+              [
+                "2015/11/23",
+                32,
+                "QG"
+              ],
+              [
+                "2015/11/24",
+                26,
+                "QG"
+              ],
+              [
+                "2015/11/25",
+                22,
+                "QG"
+              ],
+              [
+                "2015/11/26",
+                16,
+                "QG"
+              ],
+              [
+                "2015/11/27",
+                22,
+                "QG"
+              ],
+              [
+                "2015/11/28",
+                10,
+                "QG"
+              ],
+              [
+                "2015/11/08",
+                10,
+                "SY"
+              ],
+              [
+                "2015/11/09",
+                15,
+                "SY"
+              ],
+              [
+                "2015/11/10",
+                35,
+                "SY"
+              ],
+              [
+                "2015/11/11",
+                38,
+                "SY"
+              ],
+              [
+                "2015/11/12",
+                22,
+                "SY"
+              ],
+              [
+                "2015/11/13",
+                16,
+                "SY"
+              ],
+              [
+                "2015/11/14",
+                7,
+                "SY"
+              ],
+              [
+                "2015/11/15",
+                2,
+                "SY"
+              ],
+              [
+                "2015/11/16",
+                17,
+                "SY"
+              ],
+              [
+                "2015/11/17",
+                33,
+                "SY"
+              ],
+              [
+                "2015/11/18",
+                40,
+                "SY"
+              ],
+              [
+                "2015/11/19",
+                32,
+                "SY"
+              ],
+              [
+                "2015/11/20",
+                26,
+                "SY"
+              ],
+              [
+                "2015/11/21",
+                35,
+                "SY"
+              ],
+              [
+                "2015/11/22",
+                4,
+                "SY"
+              ],
+              [
+                "2015/11/23",
+                32,
+                "SY"
+              ],
+              [
+                "2015/11/24",
+                26,
+                "SY"
+              ],
+              [
+                "2015/11/25",
+                22,
+                "SY"
+              ],
+              [
+                "2015/11/26",
+                16,
+                "SY"
+              ],
+              [
+                "2015/11/27",
+                22,
+                "SY"
+              ],
+              [
+                "2015/11/28",
+                10,
+                "SY"
+              ],
+              [
+                "2015/11/08",
+                10,
+                "DD"
+              ],
+              [
+                "2015/11/09",
+                15,
+                "DD"
+              ],
+              [
+                "2015/11/10",
+                35,
+                "DD"
+              ],
+              [
+                "2015/11/11",
+                38,
+                "DD"
+              ],
+              [
+                "2015/11/12",
+                22,
+                "DD"
+              ],
+              [
+                "2015/11/13",
+                16,
+                "DD"
+              ],
+              [
+                "2015/11/14",
+                7,
+                "DD"
+              ],
+              [
+                "2015/11/15",
+                2,
+                "DD"
+              ],
+              [
+                "2015/11/16",
+                17,
+                "DD"
+              ],
+              [
+                "2015/11/17",
+                33,
+                "DD"
+              ],
+              [
+                "2015/11/18",
+                4,
+                "DD"
+              ],
+              [
+                "2015/11/19",
+                32,
+                "DD"
+              ],
+              [
+                "2015/11/20",
+                26,
+                "DD"
+              ],
+              [
+                "2015/11/21",
+                35,
+                "DD"
+              ],
+              [
+                "2015/11/22",
+                40,
+                "DD"
+              ],
+              [
+                "2015/11/23",
+                32,
+                "DD"
+              ],
+              [
+                "2015/11/24",
+                26,
+                "DD"
+              ],
+              [
+                "2015/11/25",
+                22,
+                "DD"
+              ],
+              [
+                "2015/11/26",
+                16,
+                "DD"
+              ],
+              [
+                "2015/11/27",
+                22,
+                "DD"
+              ],
+              [
+                "2015/11/28",
+                10,
+                "DD"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "themeRiver-lastfm",
+      "link": "https://echarts.apache.org/examples/examples/js/themeRiver-lastfm.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 8 column 15 (char 108)"
+      }
+    }
+  ],
+  "Calendar": [
+    {
+      "name": "calendar-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-simple.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 13 column 13 (char 200)"
+      }
+    },
+    {
+      "name": "calendar-heatmap",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-heatmap.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 30 column 13 (char 540)"
+      }
+    },
+    {
+      "name": "calendar-vertical",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-vertical.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 18 (char 57)"
+      }
+    },
+    {
+      "name": "calendar-horizontal",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-horizontal.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 35 column 15 (char 586)"
+      }
+    },
+    {
+      "name": "calendar-graph",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-graph.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 41 column 16 (char 783)"
+      }
+    },
+    {
+      "name": "calendar-lunar",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-lunar.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 18 (char 34)"
+      }
+    },
+    {
+      "name": "calendar-pie",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-pie.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 17 (char 204)"
+      }
+    },
+    {
+      "name": "calendar-charts",
+      "link": "https://echarts.apache.org/examples/examples/js/calendar-charts.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 101 column 16 (char 1863)"
+      }
+    },
+    {
+      "name": "custom-calendar-icon",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-calendar-icon.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 24 column 21 (char 449)"
+      }
+    }
+  ],
+  "Custom": [
+    {
+      "name": "bar-histogram",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-histogram.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 40 column 19 (char 734)"
+      }
+    },
+    {
+      "name": "custom-profit",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-profit.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 14 column 21 (char 195)"
+      }
+    },
+    {
+      "name": "custom-error-scatter",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-error-scatter.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 23 column 15 (char 305)"
+      }
+    },
+    {
+      "name": "custom-bar-trend",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-bar-trend.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 6 column 13 (char 70)"
+      }
+    },
+    {
+      "name": "custom-cartesian-polygon",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-cartesian-polygon.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 23 column 21 (char 334)"
+      }
+    },
+    {
+      "name": "custom-error-bar",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-error-bar.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 27 column 13 (char 380)"
+      }
+    },
+    {
+      "name": "custom-profile",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-profile.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 18 (char 34)"
+      }
+    },
+    {
+      "name": "cycle-plot",
+      "link": "https://echarts.apache.org/examples/examples/js/cycle-plot.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 26 column 13 (char 435)"
+      }
+    },
+    {
+      "name": "custom-gantt-flight",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-gantt-flight.js",
+      "option": {}
+    },
+    {
+      "name": "custom-polar-heatmap",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-polar-heatmap.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 10 column 12 (char 148)"
+      }
+    },
+    {
+      "name": "flame-graph",
+      "link": "https://echarts.apache.org/examples/examples/js/flame-graph.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 20 column 20 (char 330)"
+      }
+    },
+    {
+      "name": "wind-barb",
+      "link": "https://echarts.apache.org/examples/examples/js/wind-barb.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 9 column 22 (char 204)"
+      }
+    },
+    {
+      "name": "custom-hexbin",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-hexbin.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 24 (char 25)"
+      }
+    },
+    {
+      "name": "custom-calendar-icon",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-calendar-icon.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 24 column 21 (char 449)"
+      }
+    },
+    {
+      "name": "custom-wind",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-wind.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 5 column 16 (char 97)"
+      }
+    },
+    {
+      "name": "custom-gauge",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-gauge.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 22 (char 23)"
+      }
+    },
+    {
+      "name": "geo-svg-custom-effect",
+      "link": "https://echarts.apache.org/examples/examples/js/geo-svg-custom-effect.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 23 column 7 (char 592)"
+      }
+    },
+    {
+      "name": "pie-parliament-transition",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-parliament-transition.js"
+    },
+    {
+      "name": "circle-packing-with-d3",
+      "link": "https://echarts.apache.org/examples/examples/js/circle-packing-with-d3.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 3 column 17 (char 35)"
+      }
+    },
+    {
+      "name": "custom-spiral-race",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-spiral-race.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 2 column 24 (char 25)"
+      }
+    }
+  ],
+  "Dataset": [
+    {
+      "name": "data-transform-sort-bar",
+      "link": "https://echarts.apache.org/examples/examples/js/data-transform-sort-bar.js",
+      "option": {
+        "dataset": [
+          {
+            "dimensions": [
+              "name",
+              "age",
+              "profession",
+              "score",
+              "date"
+            ],
+            "source": [
+              [
+                "Hannah Krause",
+                41,
+                "Engineer",
+                314,
+                "2011-02-12"
+              ],
+              [
+                "Zhao Qian",
+                20,
+                "Teacher",
+                351,
+                "2011-03-01"
+              ],
+              [
+                "Jasmin Krause ",
+                52,
+                "Musician",
+                287,
+                "2011-02-14"
+              ],
+              [
+                "Li Lei",
+                37,
+                "Teacher",
+                219,
+                "2011-02-18"
+              ],
+              [
+                "Karle Neumann",
+                25,
+                "Engineer",
+                253,
+                "2011-04-02"
+              ],
+              [
+                "Adrian Gro\u00df",
+                19,
+                "Teacher",
+                "-",
+                "2011-01-16"
+              ],
+              [
+                "Mia Neumann",
+                71,
+                "Engineer",
+                165,
+                "2011-03-19"
+              ],
+              [
+                "B\u00f6hm Fuchs",
+                36,
+                "Musician",
+                318,
+                "2011-02-24"
+              ],
+              [
+                "Han Meimei",
+                67,
+                "Engineer",
+                366,
+                "2011-03-12"
+              ]
+            ]
+          },
+          {
+            "transform": {
+              "type": "sort",
+              "config": {
+                "dimension": "score",
+                "order": "desc"
+              }
+            }
+          }
+        ],
+        "xAxis": {
+          "type": "category",
+          "axisLabel": {
+            "interval": 0,
+            "rotate": 30
+          }
+        },
+        "yAxis": {},
+        "series": {
+          "type": "bar",
+          "encode": {
+            "x": "name",
+            "y": "score"
+          },
+          "datasetIndex": 1
+        }
+      }
+    },
+    {
+      "name": "dataset-encode0",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-encode0.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 25 column 5 (char 652)"
+      }
+    },
+    {
+      "name": "data-transform-multiple-pie",
+      "link": "https://echarts.apache.org/examples/examples/js/data-transform-multiple-pie.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 67 column 3 (char 1521)"
+      }
+    },
+    {
+      "name": "dataset-default",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-default.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 18 column 7 (char 482)"
+      }
+    },
+    {
+      "name": "dataset-encode1",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-encode1.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 11 column 20 (char 188)"
+      }
+    },
+    {
+      "name": "dataset-link",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-link.js",
+      "option": {
+        "legend": {},
+        "tooltip": {
+          "trigger": "axis",
+          "showContent": false
+        },
+        "dataset": {
+          "source": [
+            [
+              "product",
+              "2012",
+              "2013",
+              "2014",
+              "2015",
+              "2016",
+              "2017"
+            ],
+            [
+              "Milk Tea",
+              56.5,
+              82.1,
+              88.7,
+              70.1,
+              53.4,
+              85.1
+            ],
+            [
+              "Matcha Latte",
+              51.1,
+              51.4,
+              55.1,
+              53.3,
+              73.8,
+              68.7
+            ],
+            [
+              "Cheese Cocoa",
+              40.1,
+              62.2,
+              69.5,
+              36.4,
+              45.2,
+              32.5
+            ],
+            [
+              "Walnut Brownie",
+              25.2,
+              37.1,
+              41.2,
+              18,
+              33.9,
+              49.1
+            ]
+          ]
+        },
+        "xAxis": {
+          "type": "category"
+        },
+        "yAxis": {
+          "gridIndex": 0
+        },
+        "grid": {
+          "top": "55%"
+        },
+        "series": [
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "line",
+            "smooth": true,
+            "seriesLayoutBy": "row",
+            "emphasis": {
+              "focus": "series"
+            }
+          },
+          {
+            "type": "pie",
+            "id": "pie",
+            "radius": "30%",
+            "center": [
+              "50%",
+              "25%"
+            ],
+            "emphasis": {
+              "focus": "self"
+            },
+            "label": {
+              "formatter": "{b}: {@2012} ({d}%)"
+            },
+            "encode": {
+              "itemName": "product",
+              "value": "2012",
+              "tooltip": "2012"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "dataset-series-layout-by",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-series-layout-by.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 19 column 5 (char 494)"
+      }
+    },
+    {
+      "name": "dataset-simple0",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-simple0.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 15 column 3 (char 337)"
+      }
+    },
+    {
+      "name": "dataset-simple1",
+      "link": "https://echarts.apache.org/examples/examples/js/dataset-simple1.js",
+      "option": {
+        "error": "Failed to parse option: Expecting property name enclosed in double quotes: line 15 column 3 (char 497)"
+      }
+    }
+  ],
+  "DataZoom": [
+    {
+      "name": "custom-error-scatter",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-error-scatter.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 23 column 15 (char 305)"
+      }
+    },
+    {
+      "name": "area-simple",
+      "link": "https://echarts.apache.org/examples/examples/js/area-simple.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 4 column 17 (char 56)"
+      }
+    },
+    {
+      "name": "custom-gantt-flight",
+      "link": "https://echarts.apache.org/examples/examples/js/custom-gantt-flight.js",
+      "option": {}
+    },
+    {
+      "name": "wind-barb",
+      "link": "https://echarts.apache.org/examples/examples/js/wind-barb.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 9 column 22 (char 204)"
+      }
+    },
+    {
+      "name": "line-tooltip-touch",
+      "link": "https://echarts.apache.org/examples/examples/js/line-tooltip-touch.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 12 column 17 (char 215)"
+      }
+    }
+  ],
+  "Graphic": [
+    {
+      "name": "graphic-stroke-animation",
+      "link": "https://echarts.apache.org/examples/examples/js/graphic-stroke-animation.js"
+    },
+    {
+      "name": "graphic-loading",
+      "link": "https://echarts.apache.org/examples/examples/js/graphic-loading.js"
+    },
+    {
+      "name": "graphic-wave-animation",
+      "link": "https://echarts.apache.org/examples/examples/js/graphic-wave-animation.js"
+    },
+    {
+      "name": "line-graphic",
+      "link": "https://echarts.apache.org/examples/examples/js/line-graphic.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 33 column 19 (char 651)"
+      }
+    },
+    {
+      "name": "line-draggable",
+      "link": "https://echarts.apache.org/examples/examples/js/line-draggable.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 8 column 18 (char 139)"
+      }
+    }
+  ],
+  "Rich Text": [
+    {
+      "name": "pie-rich-text",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-rich-text.js",
+      "option": {
+        "error": "Failed to parse option: Expecting ',' delimiter: line 34 column 14 (char 861)"
+      }
+    },
+    {
+      "name": "pie-nest",
+      "link": "https://echarts.apache.org/examples/examples/js/pie-nest.js",
+      "option": {
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend": {
+          "data": [
+            "Direct",
+            "Marketing",
+            "Search Engine",
+            "Email",
+            "Union Ads",
+            "Video Ads",
+            "Baidu",
+            "Google",
+            "Bing",
+            "Others"
+          ]
+        },
+        "series": [
+          {
+            "name": "Access From",
+            "type": "pie",
+            "selectedMode": "single",
+            "radius": [
+              0,
+              "30%"
+            ],
+            "label": {
+              "position": "inner",
+              "fontSize": 14
+            },
+            "labelLine": {
+              "show": false
+            },
+            "data": [
+              {
+                "value": 1548,
+                "name": "Search Engine"
+              },
+              {
+                "value": 775,
+                "name": "Direct"
+              },
+              {
+                "value": 679,
+                "name": "Marketing",
+                "selected": true
+              }
+            ]
+          },
+          {
+            "name": "Access From",
+            "type": "pie",
+            "radius": [
+              "45%",
+              "60%"
+            ],
+            "labelLine": {
+              "length": 30
+            },
+            "label": {
+              "formatter": "{a|{a}}{abg|}\n{hr|}\n  {b|{b}\uff1a}{c}  {per|{d}%}  ",
+              "backgroundColor": "#F6F8FC",
+              "borderColor": "#8C8D8E",
+              "borderWidth": 1,
+              "borderRadius": 4,
+              "rich": {
+                "a": {
+                  "color": "#6E7079",
+                  "lineHeight": 22,
+                  "align": "center"
+                },
+                "hr": {
+                  "borderColor": "#8C8D8E",
+                  "width": "100%",
+                  "borderWidth": 1,
+                  "height": 0
+                },
+                "b": {
+                  "color": "#4C5058",
+                  "fontSize": 14,
+                  "fontWeight": "bold",
+                  "lineHeight": 33
+                },
+                "per": {
+                  "color": "#fff",
+                  "backgroundColor": "#4C5058",
+                  "padding": [
+                    3,
+                    4
+                  ],
+                  "borderRadius": 4
+                }
+              }
+            },
+            "data": [
+              {
+                "value": 1048,
+                "name": "Baidu"
+              },
+              {
+                "value": 335,
+                "name": "Direct"
+              },
+              {
+                "value": 310,
+                "name": "Email"
+              },
+              {
+                "value": 251,
+                "name": "Google"
+              },
+              {
+                "value": 234,
+                "name": "Union Ads"
+              },
+              {
+                "value": 147,
+                "name": "Bing"
+              },
+              {
+                "value": 135,
+                "name": "Video Ads"
+              },
+              {
+                "value": 102,
+                "name": "Others"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "bar-rich-text",
+      "link": "https://echarts.apache.org/examples/examples/js/bar-rich-text.js",
+      "option": {
+        "error": "Failed to parse option: Expecting value: line 35 column 20 (char 590)"
+      }
+    }
+  ],
+  "3D Globe": [
+    {
+      "name": "animating-contour-on-globe&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/animating-contour-on-globe&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "globe-atmosphere&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/globe-atmosphere&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "globe-contour-paint&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/globe-contour-paint&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "globe-displacement&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/globe-displacement&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "globe-echarts-gl-hello-world&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/globe-echarts-gl-hello-world&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "globe-layers&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/globe-layers&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "globe-moon&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/globe-moon&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "iron-globe&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/iron-globe&gl=1.js",
+      "option": {}
+    }
+  ],
+  "3D Bar": [
+    {
+      "name": "bar3d-dataset&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/bar3d-dataset&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "bar3d-global-population&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/bar3d-global-population&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "bar3d-myth&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/bar3d-myth&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "bar3d-noise-modified-from-marpi-demo&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/bar3d-noise-modified-from-marpi-demo&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "bar3d-punch-card&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/bar3d-punch-card&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "bar3d-simplex-noise&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/bar3d-simplex-noise&gl=1&theme=dark.js",
+      "option": {}
+    },
+    {
+      "name": "bar3d-voxelize-image&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/bar3d-voxelize-image&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "global-population-bar3d-on-globe&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/global-population-bar3d-on-globe&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "image-to-bar3d&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/image-to-bar3d&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "metal-bar3d&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/metal-bar3d&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "stacked-bar3d&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/stacked-bar3d&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "transparent-bar3d&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/transparent-bar3d&gl=1.js",
+      "option": {}
+    }
+  ],
+  "3D Scatter": [
+    {
+      "name": "scatter3d&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter3d&gl=1&theme=dark.js",
+      "option": {}
+    },
+    {
+      "name": "scatter3D-dataset&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter3D-dataset&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "scatter3d-globe-population&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter3d-globe-population&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "scatter3d-orthographic&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter3d-orthographic&gl=1&theme=dark.js",
+      "option": {}
+    },
+    {
+      "name": "scatter3d-scatter&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter3d-scatter&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "scatter3d-simplex-noise&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/scatter3d-simplex-noise&gl=1&theme=dark.js",
+      "option": {}
+    }
+  ],
+  "3D Surface": [
+    {
+      "name": "image-surface-sushuang&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/image-surface-sushuang&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "metal-surface&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/metal-surface&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "parametric-surface-rose&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/parametric-surface-rose&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "simple-surface&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/simple-surface&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "sphere-parametric-surface&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/sphere-parametric-surface&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "surface-breather&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/surface-breather&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "surface-golden-rose&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/surface-golden-rose&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "surface-leather&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/surface-leather&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "surface-mollusc-shell&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/surface-mollusc-shell&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "surface-theme-roses&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/surface-theme-roses&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "surface-wave&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/surface-wave&gl=1.js",
+      "option": {}
+    }
+  ],
+  "3D Map": [
+    {
+      "name": "map3d-buildings&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/map3d-buildings&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "map3d-wood-city&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/map3d-wood-city&gl=1.js",
+      "option": {}
+    }
+  ],
+  "3D Lines": [
+    {
+      "name": "lines3d-airline-on-globe&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/lines3d-airline-on-globe&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "lines3d-flights&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/lines3d-flights&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "lines3d-flights-gl&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/lines3d-flights-gl&gl=1.js",
+      "option": {}
+    },
+    {
+      "name": "lines3d-flights-on-geo3d&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/lines3d-flights-on-geo3d&gl=1.js",
+      "option": {}
+    }
+  ],
+  "3D Line": [
+    {
+      "name": "line3d-orthographic&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/line3d-orthographic&gl=1.js",
+      "option": {}
+    }
+  ],
+  "Scatter GL": [
+    {
+      "name": "scatterGL-gps&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/scatterGL-gps&gl=1.js",
+      "option": {}
+    }
+  ],
+  "Lines GL": [
+    {
+      "name": "linesGL-ny&gl=1",
+      "link": "https://echarts.apache.org/examples/examples/js/linesGL-ny&gl=1.js",
+      "option": {}
+    }
+  ],
+  "Flow GL": [
+    {
+      "name": "flowGL-noise&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/flowGL-noise&gl=1&theme=dark.js",
+      "option": {}
+    }
+  ],
+  "Graph GL": [
+    {
+      "name": "graphgl-gpu-layout&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/graphgl-gpu-layout&gl=1&theme=dark.js",
+      "option": {}
+    },
+    {
+      "name": "graphgl-large-internet&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/graphgl-large-internet&gl=1&theme=dark.js",
+      "option": {}
+    },
+    {
+      "name": "graphgl-npm-dep&gl=1&theme=dark",
+      "link": "https://echarts.apache.org/examples/examples/js/graphgl-npm-dep&gl=1&theme=dark.js",
+      "option": {}
+    }
+  ]
+}
